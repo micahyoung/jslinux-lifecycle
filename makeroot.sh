@@ -6,9 +6,11 @@ mkdir root
 
 cp test.sh root/test.sh
 
-#pushd ~/workspace/lifecycle
-#GOARCH=386 LINUX_COMPILATION_IMAGE=i386/golang:1.15-alpine make build-linux-lifecycle
-#popd
+if ! grep -q "32-bit" <(file ~/workspace/lifecycle/out/linux/lifecycle/lifecycle); then
+pushd ~/workspace/lifecycle
+GOARCH=386 GOOS=linux LINUX_COMPILATION_IMAGE=i386/golang:1.15-alpine make build-linux-lifecycle
+popd
+fi
 
 cp ~/workspace/lifecycle/out/linux/lifecycle/lifecycle root/lifecycle
 
