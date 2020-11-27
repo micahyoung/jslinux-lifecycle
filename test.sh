@@ -87,6 +87,5 @@ mv lifecycle /cnb/lifecycle/creator
 chmod +x /cnb/lifecycle/creator
 
 APP_IMAGE=localhost:5000/my-app:latest
-RUN_IMAGE=localhost:5000/run-image:latest
 
 /cnb/lifecycle/creator  -app=/workspace -layers=/layers -report=/layers/report.toml -cache-dir=/cache -log-level=debug $APP_IMAGE
