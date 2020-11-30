@@ -1,4 +1,4 @@
-# Run buildpacks lifecycle in JSinux
+# Run buildpacks lifecycle in JSLinux
 
 ## Usage
 * On workstation, run `./makeroot.sh` (or download and extract latest [release](https://github.com/micahyoung/jslinux-lifecycle/releases)) to create binaries in `./root/`
