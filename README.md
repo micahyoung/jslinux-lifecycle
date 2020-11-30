@@ -12,5 +12,6 @@
 
 
 ## Notes
+* `registry` is run in the background since JSLinux has a extremely limited proxy for external connections (though you can run your own [proxy](https://github.com/benjamincburns/websockproxy/) which JSLinux can [use](https://bellard.org/jslinux/faq.html#:~:text=net_url)).
 * Uses i386-compiled lifecycle since JSLinux is limited to i386 or riscv.
 * JSLinux has an enhanced version at [vfsync.org](https://vfsync.org/vm.html) which can potentially be used to save changes or share a filesystem.
